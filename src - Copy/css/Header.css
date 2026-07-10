@@ -1,0 +1,55 @@
+.header-container {
+  background-color: #5cb3be;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 10px;
+  font-style: italic;
+  justify-content: center;
+}
+
+.nav-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: right;
+  gap: 35px;
+}
+
+.nav-links button {
+  font-size: 16px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px 0 0 0;
+}
+
+.nav-links button.active {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.nav-links input[type="text"] {
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  height: 20px;
+  background-color: #227681;
+  margin-top: 10px;
+}
+.nav-links input[type="text"]::placeholder {
+  color: #eee;
+}
+.nav-links input[type="text"]:focus {
+  outline: none;
+}

@@ -1,0 +1,18 @@
+.sort-by {
+  margin: 0 10px 20px 0;
+  font-family: "Barlow", sans-serif;
+  width: 100px;
+  gap: 10px;
+}
+.sort-by-options {
+  display: flex;
+  font-family: "Barlow", sans-serif;
+  flex-direction: column;
+  height: 100px;
+}
+
+.assort-by {
+  font-family: "Barlow", sans-serif;
+  margin: 0 10px 20px 0;
+  width: 100px;
+}

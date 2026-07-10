@@ -1,0 +1,145 @@
+.header-container {
+  background-color: #103347;
+  padding: 24px 20px 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-brand {
+  width: 100%;
+}
+
+.header-title {
+  font-size: clamp(2.8rem, 4vw, 4rem);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Faster One", system-ui;
+  letter-spacing: 0.04em;
+}
+
+.nav-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.desktop-nav button {
+  font-size: 16px;
+  /* font-family: "Cinzel", serif; */
+  /* font-family: "Inter", sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Rajdhani", sans-serif; */
+  /* font-family: "Oswald", sans-serif; */
+  font-family: "Barlow", sans-serif;
+  /* font-family: "Space Grotesk", sans-serif; */
+  /* font-family: "Manrope", sans-serif; */
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px 0;
+  transition: opacity 0.2s ease;
+}
+
+.desktop-nav button:hover {
+  opacity: 0.85;
+}
+
+.desktop-nav button.active {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.mobile-nav {
+  display: none;
+  width: min(100%, 280px);
+}
+
+.mobile-nav select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #4f8ea6;
+  background-color: #1a5162;
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 14px;
+}
+
+.mobile-nav select:focus {
+  outline: none;
+  border-color: #8bd4e3;
+}
+
+.header-container.mobile-nav-active .header-title {
+  font-size: clamp(3.6rem, 10vw, 5rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (min-width: 769px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .header-brand {
+    width: auto;
+    flex: 1;
+    text-align: left;
+  }
+
+  .header-title {
+    justify-content: flex-start;
+  }
+
+  .nav-links {
+    width: auto;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 20px 16px 18px;
+  }
+
+  .header-title {
+    font-size: clamp(2.4rem, 6vw, 3rem);
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
